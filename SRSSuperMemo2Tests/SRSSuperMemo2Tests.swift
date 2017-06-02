@@ -69,8 +69,10 @@ class SRSSuperMemo2Tests: XCTestCase {
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.6), grade: 5).easinessFactor == maximumEasinessFactor)
     }
 
+}
+
+private extension SRSSuperMemo2Tests {
     func gradedItem(item: SRSItem, grade: SM2Engine.Grade) -> SRSItem {
         return sm2Engine.gradeSRSItem(item: item, grade: grade)
     }
-    
 }
