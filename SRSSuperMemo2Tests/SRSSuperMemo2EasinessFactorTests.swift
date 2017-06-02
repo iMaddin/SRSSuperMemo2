@@ -58,9 +58,3 @@ class SRSSuperMemo2EasinessFactorTests: SRSSuperMemo2Tests {
     }
     
 }
-
-private extension SRSSuperMemo2EasinessFactorTests {
-    func gradedItem(item: SRSItem, grade: SM2Engine.Grade) -> SRSItem {
-        return sm2Engine.gradeSRSItem(item: item, grade: grade)
-    }
-}
