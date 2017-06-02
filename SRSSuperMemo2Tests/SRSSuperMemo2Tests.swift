@@ -15,7 +15,7 @@ class SRSSuperMemo2Tests: XCTestCase {
 
 }
 
-private extension SRSSuperMemo2Tests {
+extension SRSSuperMemo2Tests {
     func gradedItem(item: SRSItem, grade: SM2Engine.Grade) -> SRSItem {
         return sm2Engine.gradeSRSItem(item: item, grade: grade)
     }
