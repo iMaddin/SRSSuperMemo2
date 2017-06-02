@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		1BACF7DC1EE1E36E005FB225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7DB1EE1E36E005FB225 /* AppDelegate.swift */; };
 		1BACF7DE1EE1E36E005FB225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7DD1EE1E36E005FB225 /* ViewController.swift */; };
-		1BACF7E11EE1E36E005FB225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BACF7DF1EE1E36E005FB225 /* Main.storyboard */; };
 		1BACF7E31EE1E36E005FB225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BACF7E21EE1E36E005FB225 /* Assets.xcassets */; };
-		1BACF7E61EE1E36E005FB225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BACF7E41EE1E36E005FB225 /* LaunchScreen.storyboard */; };
 		1BACF7F11EE1E36E005FB225 /* SRSSuperMemo2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7F01EE1E36E005FB225 /* SRSSuperMemo2Tests.swift */; };
+		1BACF7FC1EE1E505005FB225 /* SM2Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7FB1EE1E505005FB225 /* SM2Engine.swift */; };
+		1BACF7FE1EE1E5CC005FB225 /* SRSItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7FD1EE1E5CC005FB225 /* SRSItemProtocol.swift */; };
+		1BACF8011EE1E6C7005FB225 /* SRSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8001EE1E6C7005FB225 /* SRSItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		1BACF7D81EE1E36E005FB225 /* SRSSuperMemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRSSuperMemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BACF7DB1EE1E36E005FB225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BACF7DD1EE1E36E005FB225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1BACF7E01EE1E36E005FB225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BACF7E21EE1E36E005FB225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1BACF7E51EE1E36E005FB225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BACF7E71EE1E36E005FB225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BACF7EC1EE1E36E005FB225 /* SRSSuperMemo2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SRSSuperMemo2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BACF7F01EE1E36E005FB225 /* SRSSuperMemo2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRSSuperMemo2Tests.swift; sourceTree = "<group>"; };
 		1BACF7F21EE1E36E005FB225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BACF7FB1EE1E505005FB225 /* SM2Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SM2Engine.swift; sourceTree = "<group>"; };
+		1BACF7FD1EE1E5CC005FB225 /* SRSItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSItemProtocol.swift; sourceTree = "<group>"; };
+		1BACF8001EE1E6C7005FB225 /* SRSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		1BACF7CF1EE1E36E005FB225 = {
 			isa = PBXGroup;
 			children = (
+				1BACF7FF1EE1E603005FB225 /* SRS */,
 				1BACF7DA1EE1E36E005FB225 /* SRSSuperMemo2 */,
 				1BACF7EF1EE1E36E005FB225 /* SRSSuperMemo2Tests */,
 				1BACF7D91EE1E36E005FB225 /* Products */,
@@ -79,9 +82,7 @@
 			children = (
 				1BACF7DB1EE1E36E005FB225 /* AppDelegate.swift */,
 				1BACF7DD1EE1E36E005FB225 /* ViewController.swift */,
-				1BACF7DF1EE1E36E005FB225 /* Main.storyboard */,
 				1BACF7E21EE1E36E005FB225 /* Assets.xcassets */,
-				1BACF7E41EE1E36E005FB225 /* LaunchScreen.storyboard */,
 				1BACF7E71EE1E36E005FB225 /* Info.plist */,
 			);
 			path = SRSSuperMemo2;
@@ -94,6 +95,17 @@
 				1BACF7F21EE1E36E005FB225 /* Info.plist */,
 			);
 			path = SRSSuperMemo2Tests;
+			sourceTree = "<group>";
+		};
+		1BACF7FF1EE1E603005FB225 /* SRS */ = {
+			isa = PBXGroup;
+			children = (
+				1BACF7FB1EE1E505005FB225 /* SM2Engine.swift */,
+				1BACF7FD1EE1E5CC005FB225 /* SRSItemProtocol.swift */,
+				1BACF8001EE1E6C7005FB225 /* SRSItem.swift */,
+			);
+			name = SRS;
+			path = SRSSuperMemo2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BACF7E61EE1E36E005FB225 /* LaunchScreen.storyboard in Resources */,
 				1BACF7E31EE1E36E005FB225 /* Assets.xcassets in Resources */,
-				1BACF7E11EE1E36E005FB225 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +210,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BACF7DE1EE1E36E005FB225 /* ViewController.swift in Sources */,
+				1BACF7FE1EE1E5CC005FB225 /* SRSItemProtocol.swift in Sources */,
+				1BACF8011EE1E6C7005FB225 /* SRSItem.swift in Sources */,
 				1BACF7DC1EE1E36E005FB225 /* AppDelegate.swift in Sources */,
+				1BACF7FC1EE1E505005FB225 /* SM2Engine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,25 +234,6 @@
 			targetProxy = 1BACF7ED1EE1E36E005FB225 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1BACF7DF1EE1E36E005FB225 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1BACF7E01EE1E36E005FB225 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1BACF7E41EE1E36E005FB225 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1BACF7E51EE1E36E005FB225 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1BACF7F31EE1E36E005FB225 /* Debug */ = {
