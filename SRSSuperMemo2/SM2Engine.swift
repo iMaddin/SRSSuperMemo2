@@ -28,6 +28,8 @@ struct SM2Engine {
                 gradedItem.interval = 6
                 gradedItem.repetition = 2
             default:
+                gradedItem = verifyEasinessFactor(item: gradedItem)
+
                 gradedItem.interval = Int(ceil(Double(gradedItem.interval) * gradedItem.easinessFactor))
                 gradedItem.repetition += 1
             }
@@ -36,18 +38,24 @@ struct SM2Engine {
             let qualityFactor = Double(maxQuality - grade)
             let newEasinessFactor = gradedItem.easinessFactor + (0.1 - qualityFactor * (0.08 + qualityFactor * 0.02))
             gradedItem.easinessFactor = newEasinessFactor
+
+            gradedItem = verifyEasinessFactor(item: gradedItem)
         } else { // easinessFactor 0, 1, 2
             gradedItem.interval = 1
             gradedItem.repetition = 0
         }
-
-        if gradedItem.easinessFactor < minimumEasinessFactor {
-            gradedItem.easinessFactor = minimumEasinessFactor
-        } else if gradedItem.easinessFactor > maximumEasinessFactor {
-            gradedItem.easinessFactor = maximumEasinessFactor
-        }
         
         return gradedItem
+    }
+
+    fileprivate func verifyEasinessFactor<T: SRSItemProtocol>(item: T) -> T {
+        var newItem = item
+        if newItem.easinessFactor < minimumEasinessFactor {
+            newItem.easinessFactor = minimumEasinessFactor
+        } else if newItem.easinessFactor > maximumEasinessFactor {
+            newItem.easinessFactor = maximumEasinessFactor
+        }
+        return newItem
     }
 
 }
