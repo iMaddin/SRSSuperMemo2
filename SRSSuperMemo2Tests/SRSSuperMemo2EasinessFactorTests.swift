@@ -12,13 +12,25 @@ import XCTest
 class SRSSuperMemo2EasinessFactorTests: SRSSuperMemo2Tests {
     
     func testEasinessFactor() {
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 0).easinessFactor == 1.67)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 1).easinessFactor == 1.67)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 2).easinessFactor == 1.67)
+
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 3).easinessFactor < 1.67)
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 4).easinessFactor == 1.67)
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 5).easinessFactor > 1.67)
 
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 0).easinessFactor == 1.89)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 1).easinessFactor == 1.89)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 2).easinessFactor == 1.89)
+
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 3).easinessFactor < 1.89)
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 4).easinessFactor == 1.89)
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 5).easinessFactor > 1.89)
+
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: 0).easinessFactor == 2.2)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: 1).easinessFactor == 2.2)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: 2).easinessFactor == 2.2)
 
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: 3).easinessFactor < 2.2)
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: 4).easinessFactor == 2.2)
