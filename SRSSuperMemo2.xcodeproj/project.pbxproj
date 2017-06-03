@@ -12,12 +12,12 @@
 		1BACF7E31EE1E36E005FB225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BACF7E21EE1E36E005FB225 /* Assets.xcassets */; };
 		1BACF7F11EE1E36E005FB225 /* SRSSuperMemo2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7F01EE1E36E005FB225 /* SRSSuperMemo2Tests.swift */; };
 		1BACF7FC1EE1E505005FB225 /* SM2Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7FB1EE1E505005FB225 /* SM2Engine.swift */; };
-		1BACF7FE1EE1E5CC005FB225 /* SRSItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7FD1EE1E5CC005FB225 /* SRSItemProtocol.swift */; };
+		1BACF7FE1EE1E5CC005FB225 /* SM2ItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7FD1EE1E5CC005FB225 /* SM2ItemProtocol.swift */; };
 		1BACF8011EE1E6C7005FB225 /* SRSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8001EE1E6C7005FB225 /* SRSItem.swift */; };
 		1BACF8031EE1F94E005FB225 /* SRSSuperMemo2EasinessFactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8021EE1F94E005FB225 /* SRSSuperMemo2EasinessFactorTests.swift */; };
 		1BACF8051EE1F963005FB225 /* SRSSuperMemo2RepetitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8041EE1F963005FB225 /* SRSSuperMemo2RepetitionTests.swift */; };
 		1BACF8071EE1F96E005FB225 /* SRSSuperMemo2IntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8061EE1F96E005FB225 /* SRSSuperMemo2IntervalTests.swift */; };
-		1BACF8121EE2A8A2005FB225 /* SRSGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8111EE2A8A2005FB225 /* SRSGrade.swift */; };
+		1BACF8121EE2A8A2005FB225 /* SM2Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8111EE2A8A2005FB225 /* SM2Grade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +40,12 @@
 		1BACF7F01EE1E36E005FB225 /* SRSSuperMemo2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRSSuperMemo2Tests.swift; sourceTree = "<group>"; };
 		1BACF7F21EE1E36E005FB225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BACF7FB1EE1E505005FB225 /* SM2Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SM2Engine.swift; sourceTree = "<group>"; };
-		1BACF7FD1EE1E5CC005FB225 /* SRSItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSItemProtocol.swift; sourceTree = "<group>"; };
+		1BACF7FD1EE1E5CC005FB225 /* SM2ItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SM2ItemProtocol.swift; sourceTree = "<group>"; };
 		1BACF8001EE1E6C7005FB225 /* SRSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSItem.swift; sourceTree = "<group>"; };
 		1BACF8021EE1F94E005FB225 /* SRSSuperMemo2EasinessFactorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSSuperMemo2EasinessFactorTests.swift; sourceTree = "<group>"; };
 		1BACF8041EE1F963005FB225 /* SRSSuperMemo2RepetitionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSSuperMemo2RepetitionTests.swift; sourceTree = "<group>"; };
 		1BACF8061EE1F96E005FB225 /* SRSSuperMemo2IntervalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSSuperMemo2IntervalTests.swift; sourceTree = "<group>"; };
-		1BACF8111EE2A8A2005FB225 /* SRSGrade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSGrade.swift; sourceTree = "<group>"; };
+		1BACF8111EE2A8A2005FB225 /* SM2Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SM2Grade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +111,21 @@
 		1BACF7FF1EE1E603005FB225 /* SRS */ = {
 			isa = PBXGroup;
 			children = (
-				1BACF7FB1EE1E505005FB225 /* SM2Engine.swift */,
-				1BACF8111EE2A8A2005FB225 /* SRSGrade.swift */,
-				1BACF7FD1EE1E5CC005FB225 /* SRSItemProtocol.swift */,
+				1BACF8131EE2AECE005FB225 /* SuperMemo 2 */,
 				1BACF8001EE1E6C7005FB225 /* SRSItem.swift */,
 			);
 			name = SRS;
 			path = SRSSuperMemo2;
+			sourceTree = "<group>";
+		};
+		1BACF8131EE2AECE005FB225 /* SuperMemo 2 */ = {
+			isa = PBXGroup;
+			children = (
+				1BACF7FB1EE1E505005FB225 /* SM2Engine.swift */,
+				1BACF8111EE2A8A2005FB225 /* SM2Grade.swift */,
+				1BACF7FD1EE1E5CC005FB225 /* SM2ItemProtocol.swift */,
+			);
+			name = "SuperMemo 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,9 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BACF8121EE2A8A2005FB225 /* SRSGrade.swift in Sources */,
+				1BACF8121EE2A8A2005FB225 /* SM2Grade.swift in Sources */,
 				1BACF7DE1EE1E36E005FB225 /* ViewController.swift in Sources */,
-				1BACF7FE1EE1E5CC005FB225 /* SRSItemProtocol.swift in Sources */,
+				1BACF7FE1EE1E5CC005FB225 /* SM2ItemProtocol.swift in Sources */,
 				1BACF8011EE1E6C7005FB225 /* SRSItem.swift in Sources */,
 				1BACF7DC1EE1E36E005FB225 /* AppDelegate.swift in Sources */,
 				1BACF7FC1EE1E505005FB225 /* SM2Engine.swift in Sources */,

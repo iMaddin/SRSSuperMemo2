@@ -14,7 +14,7 @@ struct SM2Engine {
     let minimumEasinessFactor = 1.3
     let maximumEasinessFactor = 2.5
 
-    func gradeSRSItem<T: SRSItemProtocol>(item: T, grade: SRSGrade) -> T {
+    func gradeSRSItem<T: SM2ItemProtocol>(item: T, grade: SM2Grade) -> T {
         let rawGrade = grade.rawValue
         assert(rawGrade <= maxQuality)
         var gradedItem = item
@@ -46,7 +46,7 @@ struct SM2Engine {
         return gradedItem
     }
 
-    fileprivate func verifyEasinessFactor<T: SRSItemProtocol>(item: T) -> T {
+    fileprivate func verifyEasinessFactor<T: SM2ItemProtocol>(item: T) -> T {
         var newItem = item
         if newItem.easinessFactor < minimumEasinessFactor {
             newItem.easinessFactor = minimumEasinessFactor

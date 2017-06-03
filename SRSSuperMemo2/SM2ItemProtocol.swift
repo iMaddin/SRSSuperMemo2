@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SRSItemProtocol {
+protocol SM2ItemProtocol {
     var easinessFactor: Double { get set }
     var interval: Int { get set }
     var repetition: Int { get set }

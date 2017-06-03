@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SRSItem: SRSItemProtocol {
+struct SRSItem: SM2ItemProtocol {
 
     var easinessFactor: Double
     var interval: Int

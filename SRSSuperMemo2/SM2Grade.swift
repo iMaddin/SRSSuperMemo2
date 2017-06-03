@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum SRSGrade: Int {
+enum SM2Grade: Int {
     // < 3 only reset the interval & repetition count
     case zero
     case one
