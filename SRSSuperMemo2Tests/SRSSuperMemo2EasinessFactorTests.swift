@@ -12,65 +12,65 @@ import XCTest
 class SRSSuperMemo2EasinessFactorTests: SRSSuperMemo2Tests {
     
     func testEasinessFactor() {
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 0).easinessFactor == 1.67)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 1).easinessFactor == 1.67)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 2).easinessFactor == 1.67)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: .zero).easinessFactor == 1.67)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: .one).easinessFactor == 1.67)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: .two).easinessFactor == 1.67)
 
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 3).easinessFactor < 1.67)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 4).easinessFactor == 1.67)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: 5).easinessFactor > 1.67)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: .three).easinessFactor < 1.67)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: .four).easinessFactor == 1.67)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.67), grade: .five).easinessFactor > 1.67)
 
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 0).easinessFactor == 1.89)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 1).easinessFactor == 1.89)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 2).easinessFactor == 1.89)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: .zero).easinessFactor == 1.89)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: .one).easinessFactor == 1.89)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: .two).easinessFactor == 1.89)
 
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 3).easinessFactor < 1.89)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 4).easinessFactor == 1.89)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: 5).easinessFactor > 1.89)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: .three).easinessFactor < 1.89)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: .four).easinessFactor == 1.89)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.89), grade: .five).easinessFactor > 1.89)
 
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: 0).easinessFactor == 2.2)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: 1).easinessFactor == 2.2)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: 2).easinessFactor == 2.2)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: .zero).easinessFactor == 2.2)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: .one).easinessFactor == 2.2)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: .two).easinessFactor == 2.2)
 
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: 3).easinessFactor < 2.2)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: 4).easinessFactor == 2.2)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: 5).easinessFactor > 2.2)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: .three).easinessFactor < 2.2)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: .four).easinessFactor == 2.2)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.2), grade: .five).easinessFactor > 2.2)
     }
 
     func testMinimumEasinessFactor() {
         let minimumEasinessFactor = 1.3
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: 0).easinessFactor == minimumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: 1).easinessFactor == minimumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: 2).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: .zero).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: .one).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: .two).easinessFactor == minimumEasinessFactor)
 
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: 3).easinessFactor == minimumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: 4).easinessFactor == minimumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: 5).easinessFactor > minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: .three).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: .four).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3), grade: .five).easinessFactor > minimumEasinessFactor)
 
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.0), grade: 2).easinessFactor == minimumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 0.0), grade: 0).easinessFactor == minimumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 0.0), grade: 1).easinessFactor == minimumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 0.0), grade: 2).easinessFactor == minimumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 0.0), grade: 3).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.0), grade: .two).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 0.0), grade: .zero).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 0.0), grade: .one).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 0.0), grade: .two).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 0.0), grade: .three).easinessFactor == minimumEasinessFactor)
 
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: -23.0), grade: 0).easinessFactor == minimumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: -23.0), grade: 1).easinessFactor == minimumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: -23.0), grade: 2).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: -23.0), grade: .zero).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: -23.0), grade: .one).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: -23.0), grade: .two).easinessFactor == minimumEasinessFactor)
     }
 
     func testMaximumEasinessFactor() {
         let maximumEasinessFactor = 2.5
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: 0).easinessFactor == maximumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: 1).easinessFactor == maximumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: 2).easinessFactor == maximumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: .zero).easinessFactor == maximumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: .one).easinessFactor == maximumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: .two).easinessFactor == maximumEasinessFactor)
         
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: 3).easinessFactor < maximumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: 4).easinessFactor == maximumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: 5).easinessFactor == maximumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: .three).easinessFactor < maximumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: .four).easinessFactor == maximumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.5), grade: .five).easinessFactor == maximumEasinessFactor)
 
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 3.0), grade: 5).easinessFactor == maximumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1000.0), grade: 5).easinessFactor == maximumEasinessFactor)
-        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.6), grade: 5).easinessFactor == maximumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 3.0), grade: .five).easinessFactor == maximumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1000.0), grade: .five).easinessFactor == maximumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: 2.6), grade: .five).easinessFactor == maximumEasinessFactor)
     }
     
 }

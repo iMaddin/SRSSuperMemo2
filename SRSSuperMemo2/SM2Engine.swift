@@ -10,17 +10,17 @@ import Foundation
 
 struct SM2Engine {
 
-    typealias Grade = Int
     let maxQuality = 5
     let minimumEasinessFactor = 1.3
     let maximumEasinessFactor = 2.5
 
-    func gradeSRSItem<T: SRSItemProtocol>(item: T, grade: Grade) -> T {
-        assert(grade <= maxQuality)
+    func gradeSRSItem<T: SRSItemProtocol>(item: T, grade: SRSGrade) -> T {
+        let rawGrade = grade.rawValue
+        assert(rawGrade <= maxQuality)
         var gradedItem = item
         gradedItem = verifyEasinessFactor(item: gradedItem)
 
-        if grade >= 3 {
+        if rawGrade >= 3 {
             switch item.repetition {
             case 0:
                 gradedItem.interval = 1
@@ -34,7 +34,7 @@ struct SM2Engine {
             }
 
             // 3 decreases easinessFactor, 4 does not change easinessFactor, 5 increases easinessFactor
-            let qualityFactor = Double(maxQuality - grade)
+            let qualityFactor = Double(maxQuality - rawGrade)
             let newEasinessFactor = gradedItem.easinessFactor + (0.1 - qualityFactor * (0.08 + qualityFactor * 0.02))
             gradedItem.easinessFactor = newEasinessFactor
         } else { // easinessFactor 0, 1, 2
