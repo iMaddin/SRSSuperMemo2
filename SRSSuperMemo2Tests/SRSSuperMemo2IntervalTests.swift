@@ -10,12 +10,38 @@ import XCTest
 @testable import SRSSuperMemo2
 
 class SRSSuperMemo2IntervalTests: SRSSuperMemo2Tests {
-    
-    func testChanged() {
-        XCTAssert(gradedItem(item: SRSItem(repetition: 0), grade: 3).interval == 1)
-        XCTAssert(gradedItem(item: SRSItem(repetition: 1), grade: 3).interval == 6)
 
-        // n>2
+    func testFirstRepetitionInterval() {
+        XCTAssert(gradedItem(item: SRSItem(repetition: 0), grade: 3).interval == 1)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 0), grade: 4).interval == 1)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 0), grade: 5).interval == 1)
+    }
+
+    func testSecondrepetitionInterval() {
+        XCTAssert(gradedItem(item: SRSItem(repetition: 1), grade: 3).interval == 6)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 1), grade: 4).interval == 6)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 1), grade: 5).interval == 6)
+    }
+
+    func testResetInterval() {
+        XCTAssert(gradedItem(item: SRSItem(repetition: 0), grade: 0).interval == 1)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 0), grade: 1).interval == 1)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 0), grade: 2).interval == 1)
+
+        XCTAssert(gradedItem(item: SRSItem(repetition: 1), grade: 0).interval == 1)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 1), grade: 1).interval == 1)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 1), grade: 2).interval == 1)
+
+        XCTAssert(gradedItem(item: SRSItem(repetition: 2), grade: 0).interval == 1)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 2), grade: 1).interval == 1)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 2), grade: 2).interval == 1)
+
+        XCTAssert(gradedItem(item: SRSItem(repetition: 23), grade: 0).interval == 1)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 23), grade: 1).interval == 1)
+        XCTAssert(gradedItem(item: SRSItem(repetition: 23), grade: 2).interval == 1)
+    }
+
+    func testNLargerThanTwoIntervals() {
         // grade 3
         
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 1.3, interval: 0, repetition: 2), grade: 3).interval == 0)
@@ -102,24 +128,6 @@ class SRSSuperMemo2IntervalTests: SRSSuperMemo2Tests {
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 88.0, interval: 1, repetition: 10), grade: 5).interval == 3)
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 88.0, interval: 2, repetition: 100), grade: 5).interval == 5)
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 88.0, interval: 10, repetition: 100), grade: 5).interval == 25)
-    }
-
-    func testResetInterval() {
-        XCTAssert(gradedItem(item: SRSItem(repetition: 0), grade: 0).interval == 1)
-        XCTAssert(gradedItem(item: SRSItem(repetition: 0), grade: 1).interval == 1)
-        XCTAssert(gradedItem(item: SRSItem(repetition: 0), grade: 2).interval == 1)
-
-        XCTAssert(gradedItem(item: SRSItem(repetition: 1), grade: 0).interval == 1)
-        XCTAssert(gradedItem(item: SRSItem(repetition: 1), grade: 1).interval == 1)
-        XCTAssert(gradedItem(item: SRSItem(repetition: 1), grade: 2).interval == 1)
-
-        XCTAssert(gradedItem(item: SRSItem(repetition: 2), grade: 0).interval == 1)
-        XCTAssert(gradedItem(item: SRSItem(repetition: 2), grade: 1).interval == 1)
-        XCTAssert(gradedItem(item: SRSItem(repetition: 2), grade: 2).interval == 1)
-
-        XCTAssert(gradedItem(item: SRSItem(repetition: 23), grade: 0).interval == 1)
-        XCTAssert(gradedItem(item: SRSItem(repetition: 23), grade: 1).interval == 1)
-        XCTAssert(gradedItem(item: SRSItem(repetition: 23), grade: 2).interval == 1)
     }
 
 }
