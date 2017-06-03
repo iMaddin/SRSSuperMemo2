@@ -18,6 +18,7 @@ struct SM2Engine {
     func gradeSRSItem<T: SRSItemProtocol>(item: T, grade: Grade) -> T {
         assert(grade <= maxQuality)
         var gradedItem = item
+        gradedItem = verifyEasinessFactor(item: gradedItem)
 
         if grade >= 3 {
             switch item.repetition {
@@ -28,8 +29,6 @@ struct SM2Engine {
                 gradedItem.interval = 6
                 gradedItem.repetition = 2
             default:
-                gradedItem = verifyEasinessFactor(item: gradedItem)
-
                 gradedItem.interval = Int(ceil(Double(gradedItem.interval) * gradedItem.easinessFactor))
                 gradedItem.repetition += 1
             }
@@ -38,13 +37,12 @@ struct SM2Engine {
             let qualityFactor = Double(maxQuality - grade)
             let newEasinessFactor = gradedItem.easinessFactor + (0.1 - qualityFactor * (0.08 + qualityFactor * 0.02))
             gradedItem.easinessFactor = newEasinessFactor
-
-            gradedItem = verifyEasinessFactor(item: gradedItem)
         } else { // easinessFactor 0, 1, 2
             gradedItem.interval = 1
             gradedItem.repetition = 0
         }
-        
+        gradedItem = verifyEasinessFactor(item: gradedItem)
+
         return gradedItem
     }
 
