@@ -40,6 +40,10 @@ class SRSSuperMemo2EasinessFactorTests: SRSSuperMemo2Tests {
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 0.0), grade: 1).easinessFactor == minimumEasinessFactor)
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 0.0), grade: 2).easinessFactor == minimumEasinessFactor)
         XCTAssert(gradedItem(item: SRSItem(easinessFactor: 0.0), grade: 3).easinessFactor == minimumEasinessFactor)
+
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: -23.0), grade: 0).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: -23.0), grade: 1).easinessFactor == minimumEasinessFactor)
+        XCTAssert(gradedItem(item: SRSItem(easinessFactor: -23.0), grade: 2).easinessFactor == minimumEasinessFactor)
     }
 
     func testMaximumEasinessFactor() {
