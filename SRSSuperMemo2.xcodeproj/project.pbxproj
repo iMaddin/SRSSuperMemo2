@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B3395FD1EE4522E00101E46 /* SM2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B3395ED1EE4522E00101E46 /* SM2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B3396001EE4522E00101E46 /* SM2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3395EB1EE4522E00101E46 /* SM2.framework */; };
+		1B3396011EE4522E00101E46 /* SM2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3395EB1EE4522E00101E46 /* SM2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B3396091EE4524B00101E46 /* SM2Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7FB1EE1E505005FB225 /* SM2Engine.swift */; };
+		1B33960A1EE4524B00101E46 /* SM2Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8111EE2A8A2005FB225 /* SM2Grade.swift */; };
+		1B33960B1EE4524B00101E46 /* SM2ItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7FD1EE1E5CC005FB225 /* SM2ItemProtocol.swift */; };
 		1BACF7DC1EE1E36E005FB225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7DB1EE1E36E005FB225 /* AppDelegate.swift */; };
 		1BACF7DE1EE1E36E005FB225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7DD1EE1E36E005FB225 /* ViewController.swift */; };
 		1BACF7E31EE1E36E005FB225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BACF7E21EE1E36E005FB225 /* Assets.xcassets */; };
@@ -24,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1B3395FE1EE4522E00101E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BACF7D01EE1E36E005FB225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B3395EA1EE4522E00101E46;
+			remoteInfo = SM2;
+		};
 		1BACF7ED1EE1E36E005FB225 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1BACF7D01EE1E36E005FB225 /* Project object */;
@@ -33,7 +46,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1B3396051EE4522E00101E46 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1B3396011EE4522E00101E46 /* SM2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1B3395EB1EE4522E00101E46 /* SM2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SM2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3395ED1EE4522E00101E46 /* SM2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SM2.h; sourceTree = "<group>"; };
+		1B3395EE1EE4522E00101E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BACF7D81EE1E36E005FB225 /* SRSSuperMemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRSSuperMemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BACF7DB1EE1E36E005FB225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BACF7DD1EE1E36E005FB225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,10 +85,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B3395E71EE4522E00101E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BACF7D51EE1E36E005FB225 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3396001EE4522E00101E46 /* SM2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B3395EC1EE4522E00101E46 /* SM2 */ = {
+			isa = PBXGroup;
+			children = (
+				1B3395ED1EE4522E00101E46 /* SM2.h */,
+				1B3395EE1EE4522E00101E46 /* Info.plist */,
+			);
+			path = SM2;
+			sourceTree = "<group>";
+		};
 		1BACF7CF1EE1E36E005FB225 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +126,7 @@
 				1BACF7FF1EE1E603005FB225 /* SRS */,
 				1BACF7EF1EE1E36E005FB225 /* SRSSuperMemo2Tests */,
 				1BACF7DA1EE1E36E005FB225 /* SRSSuperMemo2 */,
+				1B3395EC1EE4522E00101E46 /* SM2 */,
 				1BACF7D91EE1E36E005FB225 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +136,7 @@
 			children = (
 				1BACF7D81EE1E36E005FB225 /* SRSSuperMemo2.app */,
 				1BACF7EC1EE1E36E005FB225 /* SRSSuperMemo2Tests.xctest */,
+				1B3395EB1EE4522E00101E46 /* SM2.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,7 +197,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1B3395E81EE4522E00101E46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3395FD1EE4522E00101E46 /* SM2.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		1B3395EA1EE4522E00101E46 /* SM2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B3396021EE4522E00101E46 /* Build configuration list for PBXNativeTarget "SM2" */;
+			buildPhases = (
+				1B3395E61EE4522E00101E46 /* Sources */,
+				1B3395E71EE4522E00101E46 /* Frameworks */,
+				1B3395E81EE4522E00101E46 /* Headers */,
+				1B3395E91EE4522E00101E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SM2;
+			productName = SM2;
+			productReference = 1B3395EB1EE4522E00101E46 /* SM2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1BACF7D71EE1E36E005FB225 /* SRSSuperMemo2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BACF7F51EE1E36E005FB225 /* Build configuration list for PBXNativeTarget "SRSSuperMemo2" */;
@@ -156,10 +234,12 @@
 				1BACF7D41EE1E36E005FB225 /* Sources */,
 				1BACF7D51EE1E36E005FB225 /* Frameworks */,
 				1BACF7D61EE1E36E005FB225 /* Resources */,
+				1B3396051EE4522E00101E46 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1B3395FF1EE4522E00101E46 /* PBXTargetDependency */,
 			);
 			name = SRSSuperMemo2;
 			productName = SRSSuperMemo2;
@@ -194,6 +274,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Maddin;
 				TargetAttributes = {
+					1B3395EA1EE4522E00101E46 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
 					1BACF7D71EE1E36E005FB225 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
@@ -220,11 +304,19 @@
 			targets = (
 				1BACF7D71EE1E36E005FB225 /* SRSSuperMemo2 */,
 				1BACF7EB1EE1E36E005FB225 /* SRSSuperMemo2Tests */,
+				1B3395EA1EE4522E00101E46 /* SM2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1B3395E91EE4522E00101E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BACF7D61EE1E36E005FB225 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +335,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1B3395E61EE4522E00101E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3396091EE4524B00101E46 /* SM2Engine.swift in Sources */,
+				1B33960A1EE4524B00101E46 /* SM2Grade.swift in Sources */,
+				1B33960B1EE4524B00101E46 /* SM2ItemProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BACF7D41EE1E36E005FB225 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,6 +375,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1B3395FF1EE4522E00101E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B3395EA1EE4522E00101E46 /* SM2 */;
+			targetProxy = 1B3395FE1EE4522E00101E46 /* PBXContainerItemProxy */;
+		};
 		1BACF7EE1EE1E36E005FB225 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1BACF7D71EE1E36E005FB225 /* SRSSuperMemo2 */;
@@ -281,6 +388,50 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1B3396031EE4522E00101E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SM2/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.maddin.SM2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1B3396041EE4522E00101E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SM2/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.maddin.SM2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1BACF7F31EE1E36E005FB225 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -377,6 +528,7 @@
 		1BACF7F61EE1E36E005FB225 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SRSSuperMemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -389,6 +541,7 @@
 		1BACF7F71EE1E36E005FB225 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SRSSuperMemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -429,6 +582,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B3396021EE4522E00101E46 /* Build configuration list for PBXNativeTarget "SM2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B3396031EE4522E00101E46 /* Debug */,
+				1B3396041EE4522E00101E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1BACF7D31EE1E36E005FB225 /* Build configuration list for PBXProject "SRSSuperMemo2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
