@@ -1,7 +1,7 @@
-# Spaced Repetition System (SRS) - SuperMemo 2 Algorithm
+# Spaced Repetition System - SuperMemo 2 Algorithm
 
-Spaced Repetition System from the SuperMemo 2 Algorithm written in Swift.
-The code was changed kept as similar to the original source code as much as possible so you can easily compare and verify the codes correctness.
+Spaced Repetition System (SRS) from the SuperMemo 2 (SM-2) algorithm written in Swift.
+The code was kept as similar to the original source code as possible so you can easily compare and verify the code's correctness.
 
 ## Links
 [SuperMemo 2: Algorithm](https://www.supermemo.com/english/ol/sm2.htm)
