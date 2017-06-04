@@ -97,6 +97,7 @@
 			children = (
 				1BACF7DB1EE1E36E005FB225 /* AppDelegate.swift */,
 				1BACF7DD1EE1E36E005FB225 /* ViewController.swift */,
+				1BB1953B1EE423B1003CD23C /* Taylor.swift */,
 				1BACF7E21EE1E36E005FB225 /* Assets.xcassets */,
 				1BACF7E71EE1E36E005FB225 /* Info.plist */,
 			);
@@ -137,10 +138,9 @@
 		1BB1952C1EE41460003CD23C /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				1BB195391EE423A5003CD23C /* ExampleFlashcardApp.swift */,
 				1BACF8141EE2AF5D005FB225 /* FlashcardProtocol.swift */,
 				1BACF8001EE1E6C7005FB225 /* SRSItem.swift */,
-				1BB195391EE423A5003CD23C /* ExampleFlashcardApp.swift */,
-				1BB1953B1EE423B1003CD23C /* Taylor.swift */,
 			);
 			name = Example;
 			path = SRSSuperMemo2;
