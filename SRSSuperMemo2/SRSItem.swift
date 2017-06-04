@@ -8,16 +8,27 @@
 
 import Foundation
 
-struct SRSItem: SM2ItemProtocol {
+struct SRSItem: SM2ItemProtocol, FlashcardProtocol {
 
     var easinessFactor: Double
     var interval: Int
     var repetition: Int
 
-    init(easinessFactor: Double = 2.5, interval: Int = 0, repetition: Int = 0) {
+    typealias DataType = String
+    typealias CalendarDateType = TimeInterval
+    typealias IdentifierType = UUID
+
+    var front: String = ""
+    var back: String = ""
+    var previousDate: TimeInterval = Date().timeIntervalSince1970
+    var nextDate: TimeInterval = Date().timeIntervalSince1970
+    var identifier: UUID
+
+    init(easinessFactor: Double = 2.5, interval: Int = 0, repetition: Int = 0, identifier: UUID = UUID()) {
     	self.easinessFactor = easinessFactor
     	self.interval = interval
     	self.repetition = repetition
+        self.identifier = identifier
     }
     
 }

@@ -18,6 +18,9 @@
 		1BACF8051EE1F963005FB225 /* SRSSuperMemo2RepetitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8041EE1F963005FB225 /* SRSSuperMemo2RepetitionTests.swift */; };
 		1BACF8071EE1F96E005FB225 /* SRSSuperMemo2IntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8061EE1F96E005FB225 /* SRSSuperMemo2IntervalTests.swift */; };
 		1BACF8121EE2A8A2005FB225 /* SM2Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8111EE2A8A2005FB225 /* SM2Grade.swift */; };
+		1BACF8151EE2AF5D005FB225 /* FlashcardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8141EE2AF5D005FB225 /* FlashcardProtocol.swift */; };
+		1BB1953A1EE423A5003CD23C /* ExampleFlashcardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB195391EE423A5003CD23C /* ExampleFlashcardApp.swift */; };
+		1BB1953C1EE423B1003CD23C /* Taylor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB1953B1EE423B1003CD23C /* Taylor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		1BACF8041EE1F963005FB225 /* SRSSuperMemo2RepetitionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSSuperMemo2RepetitionTests.swift; sourceTree = "<group>"; };
 		1BACF8061EE1F96E005FB225 /* SRSSuperMemo2IntervalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSSuperMemo2IntervalTests.swift; sourceTree = "<group>"; };
 		1BACF8111EE2A8A2005FB225 /* SM2Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SM2Grade.swift; sourceTree = "<group>"; };
+		1BACF8141EE2AF5D005FB225 /* FlashcardProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardProtocol.swift; sourceTree = "<group>"; };
+		1BB195391EE423A5003CD23C /* ExampleFlashcardApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleFlashcardApp.swift; sourceTree = "<group>"; };
+		1BB1953B1EE423B1003CD23C /* Taylor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taylor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 		1BACF7CF1EE1E36E005FB225 = {
 			isa = PBXGroup;
 			children = (
+				1BB1952C1EE41460003CD23C /* Example */,
 				1BACF7FF1EE1E603005FB225 /* SRS */,
 				1BACF7EF1EE1E36E005FB225 /* SRSSuperMemo2Tests */,
 				1BACF7DA1EE1E36E005FB225 /* SRSSuperMemo2 */,
@@ -112,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				1BACF8131EE2AECE005FB225 /* SuperMemo 2 */,
-				1BACF8001EE1E6C7005FB225 /* SRSItem.swift */,
 			);
 			name = SRS;
 			path = SRSSuperMemo2;
@@ -126,6 +132,18 @@
 				1BACF7FD1EE1E5CC005FB225 /* SM2ItemProtocol.swift */,
 			);
 			name = "SuperMemo 2";
+			sourceTree = "<group>";
+		};
+		1BB1952C1EE41460003CD23C /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				1BACF8141EE2AF5D005FB225 /* FlashcardProtocol.swift */,
+				1BACF8001EE1E6C7005FB225 /* SRSItem.swift */,
+				1BB195391EE423A5003CD23C /* ExampleFlashcardApp.swift */,
+				1BB1953B1EE423B1003CD23C /* Taylor.swift */,
+			);
+			name = Example;
+			path = SRSSuperMemo2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,11 +248,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BACF8121EE2A8A2005FB225 /* SM2Grade.swift in Sources */,
+				1BB1953A1EE423A5003CD23C /* ExampleFlashcardApp.swift in Sources */,
 				1BACF7DE1EE1E36E005FB225 /* ViewController.swift in Sources */,
 				1BACF7FE1EE1E5CC005FB225 /* SM2ItemProtocol.swift in Sources */,
 				1BACF8011EE1E6C7005FB225 /* SRSItem.swift in Sources */,
 				1BACF7DC1EE1E36E005FB225 /* AppDelegate.swift in Sources */,
 				1BACF7FC1EE1E505005FB225 /* SM2Engine.swift in Sources */,
+				1BB1953C1EE423B1003CD23C /* Taylor.swift in Sources */,
+				1BACF8151EE2AF5D005FB225 /* FlashcardProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +445,7 @@
 				1BACF7F71EE1E36E005FB225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BACF7F81EE1E36E005FB225 /* Build configuration list for PBXNativeTarget "SRSSuperMemo2Tests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +454,7 @@
 				1BACF7FA1EE1E36E005FB225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
