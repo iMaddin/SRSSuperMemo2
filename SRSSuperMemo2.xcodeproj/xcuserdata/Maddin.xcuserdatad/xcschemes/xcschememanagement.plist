@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SM2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SM2Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>SRSSuperMemo2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1B33959E1EE443EE00101E46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1B3395AF1EE4446D00101E46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1B3395B71EE4446E00101E46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1BACF7D71EE1E36E005FB225</key>
 		<dict>
 			<key>primary</key>

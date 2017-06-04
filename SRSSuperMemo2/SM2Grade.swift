@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum SM2Grade: Int {
+public enum SM2Grade: Int {
     // < 3 only reset the interval & repetition count
     case zero
     case one

@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct SM2Engine {
+public struct SM2Engine {
 
     let maxQuality = 5
     let minimumEasinessFactor = 1.3
     let maximumEasinessFactor = 2.5
 
-    func gradeSRSItem<T: SM2ItemProtocol>(item: T, grade: SM2Grade) -> T {
+    public func gradeSRSItem<T: SM2ItemProtocol>(item: T, grade: SM2Grade) -> T {
         let rawGrade = grade.rawValue
         assert(rawGrade <= maxQuality)
         var gradedItem = item
@@ -56,4 +56,5 @@ struct SM2Engine {
         return newItem
     }
 
+    public init() {}
 }
