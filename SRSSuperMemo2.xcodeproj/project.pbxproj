@@ -13,7 +13,7 @@
 		1BACF7F11EE1E36E005FB225 /* SRSSuperMemo2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7F01EE1E36E005FB225 /* SRSSuperMemo2Tests.swift */; };
 		1BACF7FC1EE1E505005FB225 /* SM2Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7FB1EE1E505005FB225 /* SM2Engine.swift */; };
 		1BACF7FE1EE1E5CC005FB225 /* SM2ItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF7FD1EE1E5CC005FB225 /* SM2ItemProtocol.swift */; };
-		1BACF8011EE1E6C7005FB225 /* SRSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8001EE1E6C7005FB225 /* SRSItem.swift */; };
+		1BACF8011EE1E6C7005FB225 /* SRSExampleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8001EE1E6C7005FB225 /* SRSExampleItem.swift */; };
 		1BACF8031EE1F94E005FB225 /* SRSSuperMemo2EasinessFactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8021EE1F94E005FB225 /* SRSSuperMemo2EasinessFactorTests.swift */; };
 		1BACF8051EE1F963005FB225 /* SRSSuperMemo2RepetitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8041EE1F963005FB225 /* SRSSuperMemo2RepetitionTests.swift */; };
 		1BACF8071EE1F96E005FB225 /* SRSSuperMemo2IntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACF8061EE1F96E005FB225 /* SRSSuperMemo2IntervalTests.swift */; };
@@ -44,7 +44,7 @@
 		1BACF7F21EE1E36E005FB225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BACF7FB1EE1E505005FB225 /* SM2Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SM2Engine.swift; sourceTree = "<group>"; };
 		1BACF7FD1EE1E5CC005FB225 /* SM2ItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SM2ItemProtocol.swift; sourceTree = "<group>"; };
-		1BACF8001EE1E6C7005FB225 /* SRSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSItem.swift; sourceTree = "<group>"; };
+		1BACF8001EE1E6C7005FB225 /* SRSExampleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSExampleItem.swift; sourceTree = "<group>"; };
 		1BACF8021EE1F94E005FB225 /* SRSSuperMemo2EasinessFactorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSSuperMemo2EasinessFactorTests.swift; sourceTree = "<group>"; };
 		1BACF8041EE1F963005FB225 /* SRSSuperMemo2RepetitionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSSuperMemo2RepetitionTests.swift; sourceTree = "<group>"; };
 		1BACF8061EE1F96E005FB225 /* SRSSuperMemo2IntervalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSSuperMemo2IntervalTests.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 			children = (
 				1BB195391EE423A5003CD23C /* ExampleFlashcardApp.swift */,
 				1BACF8141EE2AF5D005FB225 /* FlashcardProtocol.swift */,
-				1BACF8001EE1E6C7005FB225 /* SRSItem.swift */,
+				1BACF8001EE1E6C7005FB225 /* SRSExampleItem.swift */,
 			);
 			name = Example;
 			path = SRSSuperMemo2;
@@ -251,7 +251,7 @@
 				1BB1953A1EE423A5003CD23C /* ExampleFlashcardApp.swift in Sources */,
 				1BACF7DE1EE1E36E005FB225 /* ViewController.swift in Sources */,
 				1BACF7FE1EE1E5CC005FB225 /* SM2ItemProtocol.swift in Sources */,
-				1BACF8011EE1E6C7005FB225 /* SRSItem.swift in Sources */,
+				1BACF8011EE1E6C7005FB225 /* SRSExampleItem.swift in Sources */,
 				1BACF7DC1EE1E36E005FB225 /* AppDelegate.swift in Sources */,
 				1BACF7FC1EE1E505005FB225 /* SM2Engine.swift in Sources */,
 				1BB1953C1EE423B1003CD23C /* Taylor.swift in Sources */,

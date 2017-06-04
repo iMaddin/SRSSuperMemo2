@@ -23,8 +23,8 @@ struct ExampleFlashcardApp {
         dataModel.replace(flashcard: flashcard, withGradedCard: gradedFlashCard)
     }
 
-    func createFlashCard() -> SRSItem {
-        var flashcard = SRSItem()
+    func createFlashCard() -> SRSExampleItem {
+        var flashcard = SRSExampleItem()
         flashcard.front = "💁🏼🎤"
         flashcard.back = "テイラースウィフト"
         return flashcard
@@ -33,5 +33,5 @@ struct ExampleFlashcardApp {
 }
 
 struct DataModel {
-    func replace(flashcard: SRSItem, withGradedCard: SRSItem) {}
+    func replace(flashcard: SRSExampleItem, withGradedCard: SRSExampleItem) {}
 }

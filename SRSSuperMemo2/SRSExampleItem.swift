@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SRSItem: SM2ItemProtocol, FlashcardProtocol {
+struct SRSExampleItem: SM2ItemProtocol, FlashcardProtocol {
 
     var easinessFactor: Double
     var interval: Int
