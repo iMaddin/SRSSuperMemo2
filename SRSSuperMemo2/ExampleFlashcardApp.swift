@@ -19,7 +19,7 @@ struct ExampleFlashcardApp {
 
         var gradedFlashCard = sm2Engine.gradeSRSItem(item: flashcard, grade: userResponse)
         gradedFlashCard.previousDate = flashcard.nextDate
-        gradedFlashCard.nextDate = Date().timeIntervalSince1970
+        gradedFlashCard.nextDate = Date().timeIntervalSince1970 + gradedFlashCard.interval * 86400 // today + repeat in X days (in seconds)
         dataModel.replace(flashcard: flashcard, withGradedCard: gradedFlashCard)
     }
 
